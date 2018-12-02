@@ -10,4 +10,4 @@
         (map read-string)
         (apply + initial))))
 
-(advent-1)
+#_(advent-1)
