@@ -11,3 +11,13 @@
         (apply + initial))))
 
 #_(advent-1)
+
+(defn advent-2
+  ([] (advent-2 0))
+  ([initial]
+   (->> (read-lines "input/input2.txt")
+        (map read-string)
+        (reductions + initial)
+        (reductions (fn [acc v] [(conj acc v)]) #{}))))
+
+#_(advent-2)
