@@ -1,4 +1,4 @@
-(set-env!
+2(set-env!
  :source-paths #{"src"}
  :resource-paths #{"input"}
  :dependencies
@@ -12,17 +12,7 @@
    [org.clojure/tools.logging               "0.3.1"]
    [org.clojure/tools.nrepl                 "0.2.12" :scope "test"]])
 
-;; (require '[adzerk.boot-cljs      :refer [cljs]]
-;;          '[adzerk.boot-cljs-repl :refer [cljs-repl start-repl]]
-;;          '[adzerk.boot-reload    :refer [reload]]
-;;          '[crisptrutski.boot-cljs-test :refer [test-cljs]]
-;;          '[deraen.boot-sass :refer [sass]]
-;;          '[metosin.bat-test :refer [bat-test]]
-;;          '[pandeiro.boot-http    :refer [serve]])
-
 (task-options!
  repl      {:port 10930
             :bind "0.0.0.0"})
-
-;; (deftask deps [] (repl :server true))
 
